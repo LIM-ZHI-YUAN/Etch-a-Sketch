@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 960px;
+    height: 960px;
+}
+
+.row {
+    display: flex;
+    flex: 1; /* This allows the row to take up available space for .container heigh */
+    width: 100%; /* This allows the row to take up available space for .container width */
+} 
+
+.cell {
+    flex: 1; /* This allows the row to take up available space for .row width */
+    aspect-ratio: 1;
+    background-color: lightgray;
+    border: 1px solid black;
+}
